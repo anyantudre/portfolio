@@ -5,7 +5,7 @@ categories: [tutorial]
 tags: [moore, speech-recognition, huggingface, tts, asr]
 description: From data collection to Hugging Face ready dataset.
 image:
-  path: /assets/img/img_moore_speech_corpora/crawling_process.png
+  path: /images/blog/img_moore_speech_corpora/crawling_process.png
   alt: Crawling Process
 ---
 
@@ -73,7 +73,7 @@ Now it's time to install PyTorch. Make sure to get the **nightly version** from 
 
 If you have a Nvidia GPU, select the CUDA version. Otherwise, stick with CPU.
 
-![Torch Install](/assets/img/img_moore_speech_corpora/torch_install.png){: width="500" height="300" }
+![Torch Install](/images/blog/img_moore_speech_corpora/torch_install.png){: width="500" height="300" }
 
 For me, the command was:
 
@@ -150,7 +150,7 @@ Fix it with:
 conda install -c conda-forge gcc=12.1.0
 ```
 
-![Crawling Process](/assets/img/img_moore_speech_corpora/crawling_process.png){: width="1000" height="150" }
+![Crawling Process](/images/blog/img_moore_speech_corpora/crawling_process.png){: width="1000" height="150" }
 
 ---
 

@@ -11,7 +11,7 @@ locale                   : "en-US"
 site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Wendyellé A. Alban NYANTUDRE"
 title_separator          : "-"
-name                     : &name "Alban NYANTUDRE"
+name                     : &name "Wendyellé A. Alban NYANTUDRE"
 description              : &description "Machine Learning Engineer | Deep Learning (Vision, Language & Speech)"
 url                      : https://anyantudre.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -33,7 +33,7 @@ giscus:
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Wendyellé A. Alban NYANTUDRE"
   pronouns         : "he/him"
   bio              : "ML Engineer @GO AI Corp | Deep Learning (Vision, Language & Speech)"
@@ -88,7 +88,7 @@ author:
   weibo            : # Username
   wikipedia        : # Username
   xing             : # Username
-  youtube          : # Username
+  youtube          : "anyantudre"
   zhihu            : # Username
 
 # Publication Category - The following the list of publication categories and their headings
@@ -248,6 +248,15 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  certifications:
+    output: true
+    permalink: /:collection/:path/
+  awards:
+    output: true
+    permalink: /:collection/:path/
+  extra:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -305,6 +314,30 @@ defaults:
       type: talks
     values:
       layout: talk
+      author_profile: true
+      share: true
+  # _certifications
+  - scope:
+      path: ""
+      type: certifications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _awards
+  - scope:
+      path: ""
+      type: awards
+    values:
+      layout: single
+      author_profile: true
+      share: true
+  # _extra
+  - scope:
+      path: ""
+      type: extra
+    values:
+      layout: single
       author_profile: true
       share: true
 

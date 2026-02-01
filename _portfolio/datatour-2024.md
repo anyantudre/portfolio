@@ -2,7 +2,11 @@
 title: "Energy Demand Forecasting for Africa - DataTour 2024"
 excerpt: "2nd place solution at the pan-African Data Science Nations Cup. Developed regression models to predict energy demand across 50+ African countries.<br/><br/>**Technologies:** Scikit-learn, Pandas, NumPy, Data Visualization"
 collection: portfolio
-date: 2024-12-01
+date: 2024-12-31
+image: "portfolio/energy.jpg"
+github_url: "https://github.com/ANYANTUDRE/DataTour-2024-Pan-African-Nations-Cup"
+github_stars: 5
+tags: [Machine Learning, Data Science, Energy, XGBoost]
 ---
 
 ## Overview

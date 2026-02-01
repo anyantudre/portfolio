@@ -6,6 +6,7 @@ permalink: /teaching/2025-python-classes
 venue: "Community Initiative"
 date: 2025-03-01
 location: "Remote"
+image: "teaching/zams_python.png" 
 ---
 
 Delivered weekly Python programming classes to **60+ students** through a community initiative from March to July 2025.

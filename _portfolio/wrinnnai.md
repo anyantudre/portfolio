@@ -3,6 +3,8 @@ title: "WrinnnAI - AI Mobile Assistant for the Visually Impaired"
 excerpt: "Real-time streaming mobile assistant using Computer Vision and Speech processing to help visually impaired users navigate their environment.<br/><br/>**Technologies:** Python, Computer Vision, VLMs, TTS, Flutter, FastAPI"
 collection: portfolio
 date: 2025-05-01
+image: "portfolio/wrrinai-icon.png"
+tags: [Computer Vision, VLM, Mobile App, Accessibility]
 ---
 
 ## Overview

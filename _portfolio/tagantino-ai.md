@@ -3,6 +3,8 @@ title: "Tagantino AI - Smart Agriculture with Satellite Data"
 excerpt: "ETL pipelines and Deep Learning models to forecast droughts from satellite data, helping Moroccan farmers optimize water resources.<br/><br/>**Technologies:** PyTorch, AWS Glue, Airflow, LangChain, RAG"
 collection: portfolio
 date: 2025-06-01
+image: "portfolio/tagantino.jpg"
+tags: [Deep Learning, Data Engineering, AWS, LLM, RAG]
 ---
 
 ## Overview

@@ -8,8 +8,6 @@ layout: single
 
 <div class="blog-wrapper">
 
-  <h1 class="page__title">{{ page.title }}</h1>
-
   {% assign posts_to_show = paginator.posts | default: site.posts %}
   {% for post in posts_to_show %}
   <article class="blog-card">

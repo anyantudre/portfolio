@@ -5,7 +5,7 @@ categories: [paper_review]
 tags: [paper_review, deep_learning, cnn, yolo]
 description: YOLO unifies object detection into a single convolutional neural network that processes the entire image in one forward pass.
 image:
-  path: /assets/img/img_yolo/the_model.png
+  path: /images/blog/img_yolo/the_model.png
   alt: YOLO model.
 math: true
 ---
@@ -38,7 +38,7 @@ A single CNN simultaneously predicts multiple bounding boxes and class probabili
 - YOLO reasons globally about the image when making predictions (implicitly encodes contextual information about classes and appearance). 
 - YOLO learns generalizable representations of objects.
 
-![ResNet meme](/assets/img/img_yolo/yolo.png){: width="500" height="200" }
+![ResNet meme](/images/blog/img_yolo/yolo.png){: width="500" height="200" }
 _The YOLO Detection System._
 
 
@@ -73,7 +73,7 @@ $$
 
 This final score reflects both the **probability of the class** and **how well the predicted box matches the ground truth**, enabling efficient and accurate object detection across the whole image.
 
-![ResNet meme](/assets/img/img_yolo/the_model.png){: width="600" height="200" }
+![ResNet meme](/images/blog/img_yolo/the_model.png){: width="600" height="200" }
 _The Model. Predictions are encoded as an S*S (B*5+C)tensor._
 
 
@@ -90,7 +90,7 @@ A **faster variant**, called **Fast YOLO**, reduces the number of convolutional 
 
 The network outputs a **7×7×30 tensor**, representing predictions over the image grid.
 
-![ResNet meme](/assets/img/img_yolo/architecture.png){: width="900" height="300" }
+![ResNet meme](/images/blog/img_yolo/architecture.png){: width="900" height="300" }
 _YOLO architecture_
 
 

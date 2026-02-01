@@ -5,7 +5,7 @@ categories: [paper_review]
 tags: [paper_review, deep_learning, cnn, resnet]
 description: Is learning better networks as easy as stacking more layers?
 image:
-  path: /assets/img/img_resnet/ResNet_Paper_3.png
+  path: /images/blog/img_resnet/ResNet_Paper_3.png
   alt: Skip Connexion, a ResNet building block.
 math: true
 ---
@@ -30,7 +30,7 @@ This result won the 1st place on the ILSVRC 2015 classification task. We also pr
 Well, basically the rule was like: *"the deeper the networks, the better."*  
 Indeed, as you must know, the inner advantage of **neural networks (NN)** is their natural ability to learn **low/mid/high-level features**. So in theory, the "levels" of features can be enriched by the number of **stacked layers (depth)**, and over time, many **visual recognition tasks** have greatly benefited from **very deep models**.
 
-![ResNet meme](/assets/img/img_resnet/ResNet_meme.jpeg){: width="200" height="300" }
+![ResNet meme](/images/blog/img_resnet/ResNet_meme.jpeg){: width="200" height="300" }
 _ResNet meme_
 
 
@@ -47,7 +47,7 @@ This result is counterintuitive as a deeper model can theoretically match or eve
 The **deep residual learning framework** have layers learn the **residual** $$ F(x) = H(x) - x $$ instead of the direct mapping $$ H(x) $$, making optimization easier; the original function is recovered as $$ F(x) + x $$ using **identity shortcut connections**, which add no extra parameters or computational cost and are compatible with standard training methods like backpropagation.
 
 
-![ResNet](/assets/img/img_resnet/ResNet_Paper_3.png){: width="400" height="200" }
+![ResNet](/images/blog/img_resnet/ResNet_Paper_3.png){: width="400" height="200" }
 _Residual learning: a building block._
 
 The paper defines a **residual block** as $$ y = F(x, W_i) + x $$, where $F$ is the residual function learned by a few stacked layers, and the shortcut connection adds the input $x$ directly to the output of $F$ via element-wise addition; this design adds **no extra parameters or computational cost**.
@@ -73,7 +73,7 @@ Projection shortcuts offer only minor gains over identity shortcuts, making iden
     - `1×1` convolution (restores dimensions).
 If the **shortcut** uses a projection instead of identity, it **doubles** the model size and time complexity. Therefore, **identity shortcuts are favored** for efficiency, especially in **bottleneck structures**.
 
-![ResNet](/assets/img/img_resnet/ResNet_Paper_4.png){: width="800" height="300" }
+![ResNet](/images/blog/img_resnet/ResNet_Paper_4.png){: width="800" height="300" }
 _Skip Connexion_
 
 
@@ -93,7 +93,7 @@ When dimensions differ (e.g., due to increased channels), two options are consid
   - **Option B**: Use a **projection shortcut** via 1×1 convolutions to match dimensions (adds parameters).
 When shortcuts span feature maps of different sizes, they are applied with a **stride of 2**.
 
-![ResNet](/assets/img/img_resnet/ResNet_Paper_5.png){: width="1000" height="700" }
+![ResNet](/images/blog/img_resnet/ResNet_Paper_5.png){: width="1000" height="700" }
 _Skip Connexion_
 
 Implementation Details (ImageNet):
@@ -114,7 +114,7 @@ Implementation Details (ImageNet):
   - Weight decay: `0.0001`.
   - All plain and residual networks are **trained from scratch**.
 
-![ResNet](/assets/img/img_resnet/ResNet_Paper_2.png){: width="600" height="500" }
+![ResNet](/images/blog/img_resnet/ResNet_Paper_2.png){: width="600" height="500" }
 _Skip Connexion_
 
 
