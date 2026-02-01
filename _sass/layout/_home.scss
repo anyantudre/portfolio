@@ -305,3 +305,27 @@
 .dark .extra-empty {
   background: rgba(255, 255, 255, 0.03);
 }
+
+// =========================================================
+// Visitors Map Section
+// =========================================================
+.visitors-map {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: var(--global-code-bg-color, rgba(0, 0, 0, 0.02));
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+[data-theme="dark"] .visitors-map,
+.dark .visitors-map {
+  background: rgba(255, 255, 255, 0.03);
+}
